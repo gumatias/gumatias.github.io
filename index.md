@@ -51,3 +51,7 @@ test of body
 ### 2021-01-03 10:43 This is a new post
 
  
+### 2021-01-03 10:44 This is the title
+
+And this is the body...
+ 
