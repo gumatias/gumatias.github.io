@@ -34,9 +34,10 @@ We'll see where this goes.
  
 ### 2021-01-04 15:13 Today I Learned
 
-1. Docker is an application that has two key concepts: Containers and Images. It facilitates creating environments for developing, testing and deploying applications more easily and consistenty.
+1. Docker is an open source application that with containers and images it can run applications in isolation in a virtual environment. This makes the running apps secure and reliable. An image is file that contains the configuration of an application that can be used to run, when running, it is used as a template to run as a container. It's important to note that images are immutable and read-only, therefore, wanting to update an application configuration, dependency, version and
+so on.. can only be done form a container which itself can become an image where future containers can be created from. Dockerfile is where that image configuration exists. An image can exist without a container, though a container cannot exist without an image since it strictly needs it so it can create itself and come to life an a virtual running self-contained environment.
 
-![](https://miro.medium.com/proxy/1*gVNbunchCV5wXgnwlT-iGg.jpeg)
+![](https://p-bofzyj.t3.n0.cdn.getcloudapp.com/items/04uN8m4X/1462556c-9d39-483c-b6fd-db5659fc5ce9.jpeg?source=viewer&v=8cfbd5e64e9fc26bbe8c1dfc742589f8)
 
-2. One of Python's package manager is called Poetry and `poetry install` is how you run it initially to install the project's dependencies
+1. One of Python's package manager is called Poetry and `poetry install` is how you run it initially to install the project's dependencies.
  
