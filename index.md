@@ -50,5 +50,7 @@ One simple and common way to think about it is where you have a document that yo
 1. Proposals: Is a general and more abstract idea that captures the core of what the author is proposing given an identified and clarified problem.
 2. Tech Specs: It's an extended and more technical Proposal that goes into the nitty gritty of the proposed approach.
 
-To use an analogy (because why not), if we were the people who created and advocated for seat belts, one would use Proposals to explain why seat belts are important and what the idea is for solving the safety problem, and Tech Specs would contain more of the How to create, install and roll out it on cars along with other relevant details. Hope you got the idea.
+To use an analogy (because why not), if we were the people who created and advocated for seat belts, one would use Proposals to explain why seat belts are important and what the general idea is for solving the safety problem, whereas Tech Specs would contain more of the How to create, install and roll it out on cars, along with other relevant details. Hope you got the idea.
+
+There are cons and pros to encouraging people to go through this type of process, which I plan to expand more in another opportunity.
  
