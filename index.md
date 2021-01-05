@@ -32,3 +32,11 @@ I decided not to, and instead, take this need as an opportunity to learn and tan
 
 We'll see where this goes.
  
+### 2021-01-04 15:13 Today I Learned
+
+1. Docker is an application that has two key concepts: Containers and Images. It facilitates creating environments for developing, testing and deploying applications more easily and consistenty.
+
+![](https://miro.medium.com/proxy/1*gVNbunchCV5wXgnwlT-iGg.jpeg)
+
+2. One of Python's package manager is called Poetry and `poetry install` is how you run it initially to install the project's dependencies
+ 
