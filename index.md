@@ -39,5 +39,5 @@ so on.. can only be done form a container which itself can become an image where
 
 ![](https://p-bofzyj.t3.n0.cdn.getcloudapp.com/items/04uN8m4X/1462556c-9d39-483c-b6fd-db5659fc5ce9.jpeg?source=viewer&v=8cfbd5e64e9fc26bbe8c1dfc742589f8)
 
-1. One of Python's package manager is called Poetry and `poetry install` is how you run it initially to install the project's dependencies.
+2. One of Python's package manager is called Poetry and `poetry install` is how you run it initially to install the project's dependencies.
  
