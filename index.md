@@ -41,3 +41,14 @@ so on.. can only be done form a container which itself can become an image where
 
 2. One of Python's package manager is called Poetry and `poetry install` is how you run it initially to install the project's dependencies.
  
+### 2021-01-05 14:03 Request For Comments (RFCs)
+
+One of the initiatives I've been focusing on is how to enable people and consequently teams to collect feedback on their ideas while leveraging the experience and expertise of their colleagues. One of the best ways I found it to work is through a process called RFCs.
+
+One simple and common way to think about it is where you have a document that you're receiving feedback on from people. Currently two types of these documents have been seen: Proposals and Tech Specs.
+
+1. Proposals: Is a general and more abstract idea that captures the core of what the author is proposing given an identified and clarified problem.
+2. Tech Specs: It's an extended and more technical Proposal that goes into the nitty gritty of the proposed approach.
+
+To use an analogy (because why not), if we were the people who created and advocated for seat belts, one would use Proposals to explain why seat belts are important and what the idea is for solving the safety problem, and Tech Specs would contain more of the How to create, install and roll out it on cars along with other relevant details. Hope you got the idea.
+ 
