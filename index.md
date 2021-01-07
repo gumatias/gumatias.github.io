@@ -54,3 +54,18 @@ To use an analogy (because why not), if we were the people who created and advoc
 
 There are cons and pros to encouraging people to go through this type of process, which I plan to expand more in another opportunity.
  
+### 2021-01-06 09:03 Writing can be fun
+
+Most of my recent years have been getting good at consuming things, and if there's one skill I can say I am the master of, is it of lisetning to podcasts at 2x speed, eating and learning, etc... the life hacks I've applied are endless... [more here]
+
+I have spent being as a consumer. In fact, I've grown by people telling me that the United States has the largest amount of consumerism of goods than anywhere else. Six years living here I didn't think I'd be as attached to certain things as I am or consume as many goods as I now do. Life before was more about working towards more audacious goals and less on the specific gadget I had to buy in order to have a better life, the newest piece of technology everybody else has and keep
+upgrading, the iPhones, iWatches and iAnything else has become the reason why life isn't as great as it can be. My point here is that I realized that I became more of a consumer, and this in turn has been translating into things I actually didn't think they would. The ratio between reading, listening and watching something has significaly become far greater than the times I spend creating something.
+
+TODO:
+* How I got where I am today was through more action and less motion, there's a difference between the two (reference to Atomic Habits book/quotes)
+* Writing is an opportunity to start creating, blogging is one way, Vitaly's speech was motivating
+* Finding opportunities is not as hard as it may seem, we just need to switch the way we view the world by observing to engaging, interacting and participating.
+* Writing can be for fun or professionally, they both work.
+* RFC's is something I've been engaging more with at my company. Perhaps it may sound interesting to you.
+* How do you gather and share feedback on ideas with people? where is the space for that?
+ 
