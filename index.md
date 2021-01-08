@@ -56,7 +56,23 @@ There are cons and pros to encouraging people to go through this type of process
  
 ### 2021-01-06 09:03 Writing can be fun
 
-Most of my recent years have been getting good at consuming things, and if there's one skill I can say I am the master of, is it of lisetning to podcasts at 2x speed, eating and learning, etc... the life hacks I've applied are endless... [more here]
+Most of my recent years have been getting good at consuming things, and if there's a handful of skills I can say I am the master of, is of going out for a jog while listening to podcasts at 2x speed, watching Youtube videos as I attempt to avoid mindlessly chugging down food into my throat and reading online content as I do my most private business (if you know what I mean). The life hacks I've been applying to maximize my learning are endless...
+
+While this is all fine and good, it's an ilusion. The idea that we're actually learning anything at its best is almost inexistent. Just think about all the good books and lectures you've read or watched so far, how many can you actually give say a twenty minute presentation on?
+
+The author of "Mind for numbers" Barbara Oakley found herself having a similar struggle. For someone who used to hate anything math and science to becoming a Ph.D. and engineering professor and involved in researches related to learning how to learn, she is yet another great example that our brain is indeed adaptable, mutable and can grow.
+
+Barbara shares an interesting concept about how the learning process goes in the brain. It's the pinball game metaphor. It boils down to two different modes of thinking; focused and difused. In that game, imagine when you pull the ball shooter springs and releases, it lauches and starts hitting on all those rubber pins back and forth on a certain pattern. This is the focused mode in activation, your brain has that knowledge and knows how to connect the dots and quickly help you
+retrieve the concept one is thinking about.
+
+Now, the other version of that game is when the rubber pins are further apart than the first game your brain just played. You spring shoot the ball and as soon as that little ball reaches the "main field" it starts unpredictably hitting other pins. That's the defuse mode, it's more exploratory and in the process of solidifying and finding certain patterns that give it enough time and reinforcement, it will transform into the more focused version if given enough work.
+
+![](Image example here)
+
+Let's think about brushing our teeth. Whatever primary hand you use, when you grab the tooth brush the mindless automation gets triggered and there we go holding the tooth brush, pressing for paste and brushing it around your moth the same way you've been doing for your whole life. Your mom, dad or caregiver got to teach you one day and you kept at it until you no longer have to think about it. Now try to do it with your left hand... I tried and it actually works, in fact that
+became my default brush teething predominant hand.
+
+---
 
 I have spent being as a consumer. In fact, I've grown by people telling me that the United States has the largest amount of consumerism of goods than anywhere else. Six years living here I didn't think I'd be as attached to certain things as I am or consume as many goods as I now do. Life before was more about working towards more audacious goals and less on the specific gadget I had to buy in order to have a better life, the newest piece of technology everybody else has and keep
 upgrading, the iPhones, iWatches and iAnything else has become the reason why life isn't as great as it can be. My point here is that I realized that I became more of a consumer, and this in turn has been translating into things I actually didn't think they would. The ratio between reading, listening and watching something has significaly become far greater than the times I spend creating something.
