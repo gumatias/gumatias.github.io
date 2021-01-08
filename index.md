@@ -95,3 +95,11 @@ have the right to buy it, and by buying, what we're really talking about is the 
 
 So there you have it: You're granted an Option to own a Share of a company, where the only time you can really Exercise that Option is after it has been Vested at a given date.
  
+### 2021-01-08 04:09 Kicking things off
+
+Last year has been quite a year for pretty much all of us, and it's safe to say that people wanted 2020 to end as bad as they wanted their problems to go away. Although the reality is that the transition from 2020 to 2021 has no real impact on the events themselves and they will likely continue to exist despite of the flip of the calendar year: such as a virus, suffering and pain that were taken in place in 2020, the mental hope and relief of leaving things behind still exists and is worth celebrating at some level.
+
+The mindset is certainly one of those things that is important to reset and reframe if necessary, while still relying on your values as a guiding principle. Values are what one lives for, what truly matters to them and what they use as guidance to conduct themselves while navigating in life. The mindset on the other hand is a way to approach more immediate events on a day to day basis, how are things being done now.
+
+So perhaps this year one may want to approach their tasks with more boldness, resilliency, become a better team player and constantly take action on things.
+ 
