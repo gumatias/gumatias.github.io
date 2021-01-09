@@ -103,3 +103,22 @@ The mindset is certainly one of those things that is important to reset and refr
 
 So perhaps this year one may want to approach their tasks with more boldness, resilliency, become a better team player and constantly take action on things.
  
+### 2021-01-08 20:18 Who's looking after the internet since day one?
+
+It's uncertain where my mind have been wondering over years since I got a chance to be part of the technology industry, but one thing is for sure: there are people looking after the internet in a way that people might not be as aware of.
+
+Those people can be found as voluntary members of the Internet Engineering Task Force (IETF), which is an open organization that founded around the time the core infrastructure of the internet was being discussed and created. Not only that, but they've primarely helped create standards for the things we rely on every day and still going to help shape the internet's future. From the Internet Protocol, which is the way we can connect with each other, to the audio and video protocols we
+use and get to enjoy every single day.
+
+The IETF is an open organization, meaning they have open:
+
+1. Participation
+2. Processes
+3. Standards
+
+Their process to discuss anything internet related are open to the public, meaning anyone interested is free to participate. The standards they create are also open, therefore it's not a requirement for anyone to follow. In fact not all standards they create are followed by other organizations, but a great significant portion of them are.
+
+The IETF is creates their standars through a documentation and feedback process called RFC. RFC stands for Request For Comments, and is basically a way that authors of developing standards can share their proposals and receive feedback from those interested on the topic. As an open organization, the very first RFC document; RFC 1 up until the ones being created today are going through this very same process and are all available to all of us. If you ever wondered who are behind the scenes attempting to develop, scale, maintain, influence and help shape the future of the internet, then we just found those people.
+
+The RFC process is something as I might have spoken before, am highly focused on these days. Knowing that this very same process has been battled tested for decades since the beginning of the internet is what makes me confident that it's not a fad and that actually works at some level.
+ 
