@@ -138,3 +138,38 @@ Rambling, unnecessary thoughts and introductions aside, let me get straight into
 
 Some of these points are more vague than others, so I hope to expand more on each if/when I get more familiarity.
  
+### 2021-01-10 04:47 Forcing my way through simplicity
+
+Years ago I couldn't imagine I would be able to work from such a simple and minimal setup: A tablet. In fact, I've always strived to keep my desktop and desk as clear and clutter free as possible. I'm a firm believer on what I learned my partner and Jiro (possibly one of the most admired Suhi chefs of all time) to live by; a neat and clear workspace allows for more productive, joyful and creative work.
+
+It's been indeed pleasant to get to my little office and see such a simple area to get started with the day, it excites and motives me. For my own records, here's how it looks:
+
+![](https://photos.google.com/share/AF1QipOhvPZqJKWIgF4qhIHhb1inHTyeNihSmHZG2w1If-E2LN4-pbbg4gJgTk8imhbH4w/photo/AF1QipMwxZvghYKwpcqdgyBzcweJqOo63WvsTAvZFTx-?key=d2tpU0JYZnIyZU1oVmlBNlFaZWNPekhKN1BuZDl3)
+
+It truly has all I need
+It's gotten a frame with my company values that I strive to live by each day when interacting with my coworkers and challenging daily tasks, a tabled (more on that below), airpods and a water bottle.
+
+To be frank, other than my iPad, that's pretty much how my desk has looked like since I started working from home (actually even my office desk would have just a water bottle).
+
+I' going to focus on the iPad today because it truly has been a feat (to say the least) to find ways to be productive and get proper engineering work done with it. First let me share my motivations for doing so:
+
+1. It's super portable: I've been strategically taking meetings outdoors at a beatufiul park closeby in San Diego and I detested the weight and size of the Macbook (although being the smallest version money could buy).
+2. It reminds and helps me to create the habit of drawing (I love thinking visually and have fun doing so whenever I get to draw to express my ideas, but was doing less than I wanted)
+3. It helps me to learn about networking, brush up on my Unix command line skills
+4. It improves my focus; I'm not a multitasker and stay away from that idea, I like to focus on as less things as possible and doing it as well as I can. The iPad can't handle too much when it comes to that given the screen size and technical resources.
+5. It reminds me that great job can be done with very little as long as the individual doing the job is creative and focused enough. It still amazes me whenever I stop to think that we sent people to the moon in the 60's! I mean, people got to do what they got to do with the technology that was available to them at the time, and building rockets is no small feat. I enjoy challenging my creativity and dealing with setbacks while doing certain tasks.
+
+There are probably more reasons as to why, but those are basically the main ones that I can think of. Now, I'm a software engineer and there are certain tools that an iPad just don't have installed by default and I need to get most of my job done. So I went hunting, and to my surprise, the technology is catching up surprisingly well. I'm able to have such simple and enjoyable work days thanks to:
+
+1. Mosh/SSH: How I connect to my server computer that actually does all the heavy lifting
+2. Termius: Terminal app that I connect to the remote server for development
+3. VIM: Text editor I swear by
+4. Tmux: Terminal multiplexer (as in a movie theather with multiple separate screens) to manage the session and keep it alive even if I lose connectivity with the host computer
+5. Inspect: Frontend development-focused browser with core capabilities to inspect HTML elements, watch the Network, console outputs and more.
+
+It's only been less than a month that I put my Macbook in the shelf to serve as a host and solely using my iPad as the only place I can get do my work. Below is a pic of my poor Macbook hidden away from me so I can create the habit of using the iPad for all my tasks.
+
+![](https://photos.google.com/share/AF1QipNRCB7pcVnb0j8s67J5HyfMZ7Cm6FSO3gq54AIDU8r5In7kVRl_MjwNvtsMl6vFeQ/photo/AF1QipPPv_Qn13H24AIw0C09so6qHWQnP_zwXW50fRT9?key=NklURUJxYkRrT3p3cV8xbU51WTYxbTBYNGdxeFVn)
+
+Let's see how far this can go before I start experiencing limitations and make it unbearable, but so far I'm happy and pleased with it.
+ 
