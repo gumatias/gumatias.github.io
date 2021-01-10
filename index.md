@@ -122,3 +122,19 @@ The IETF is creates their standars through a documentation and feedback process 
 
 The RFC process is something as I might have spoken before, am highly focused on these days. Knowing that this very same process has been battled tested for decades since the beginning of the internet is what makes me confident that it's not a fad and that actually works at some level.
  
+### 2021-01-09 20:23 A few similarities and differences between Ruby and Python
+
+Rambling, unnecessary thoughts and introductions aside, let me get straight into some of the things I can think during this Pomodoro...
+
+1. Both are dynamic programming languages
+2. Everything to them is an object
+3. Foundational data structures like Arrays, Hash Tables and classes exists in both
+4. The Zen of Python states that there's only one obvious way to solve every problem and strongly encourages namespacing all things, whereas Ruby although possible, doesn't officially make such statements and encourages more "freedom" if you will
+5. Python's identation is part of its syntax, whereas Ruby doesn't care and treat it as just white spaces
+6. Python claims to perform slightly better than Ruby (as far as I learned, not looking for evidences today)
+7. Syntax for classes, method, hash, array and variables declaration and calls look very similar
+8. Python is more widely used by scholars and researchers
+9. Python doesn't provide all the extra redundant helper methods Ruby does for more easily using data structures
+
+Some of these points are more vague than others, so I hope to expand more on each if/when I get more familiarity.
+ 
