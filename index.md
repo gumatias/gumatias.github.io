@@ -144,7 +144,7 @@ Years ago I couldn't imagine I would be able to work from such a simple and mini
 
 It's been indeed pleasant to get to my little office and see such a simple area to get started with the day, it excites and motives me. For my own records, here's how it looks:
 
-![](https://photos.google.com/share/AF1QipOhvPZqJKWIgF4qhIHhb1inHTyeNihSmHZG2w1If-E2LN4-pbbg4gJgTk8imhbH4w/photo/AF1QipMwxZvghYKwpcqdgyBzcweJqOo63WvsTAvZFTx-?key=d2tpU0JYZnIyZU1oVmlBNlFaZWNPekhKN1BuZDl3)
+![](https://p-bofzyj.t3.n0.cdn.getcloudapp.com/items/llunbdlE/b013ae61-6673-4f8e-910f-135d565b72ba.jpeg?source=viewer&v=5fad2378d53942ebaaa3e79c82d48457)
 
 It truly has all I need
 It's gotten a frame with my company values that I strive to live by each day when interacting with my coworkers and challenging daily tasks, a tabled (more on that below), airpods and a water bottle.
@@ -169,7 +169,7 @@ There are probably more reasons as to why, but those are basically the main ones
 
 It's only been less than a month that I put my Macbook in the shelf to serve as a host and solely using my iPad as the only place I can get do my work. Below is a pic of my poor Macbook hidden away from me so I can create the habit of using the iPad for all my tasks.
 
-![](https://photos.google.com/share/AF1QipNRCB7pcVnb0j8s67J5HyfMZ7Cm6FSO3gq54AIDU8r5In7kVRl_MjwNvtsMl6vFeQ/photo/AF1QipPPv_Qn13H24AIw0C09so6qHWQnP_zwXW50fRT9?key=NklURUJxYkRrT3p3cV8xbU51WTYxbTBYNGdxeFVn)
+![](https://p-bofzyj.t3.n0.cdn.getcloudapp.com/items/2Nu0e7ZR/59cae467-d0b0-48ea-99fd-073c2d8b4429.jpeg?source=viewer&v=27868d866fc5ff4430ffa79578a4f973)
 
 Let's see how far this can go before I start experiencing limitations and make it unbearable, but so far I'm happy and pleased with it.
  
