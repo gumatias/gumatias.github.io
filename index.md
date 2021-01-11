@@ -173,3 +173,26 @@ It's only been less than a month that I put my Macbook in the shelf to serve as 
 
 Let's see how far this can go before I start experiencing limitations and make it unbearable, but so far I'm happy and pleased with it.
  
+### 2021-01-10 20:44 SSH Shallow Dive
+
+Today I had the pleasure to learn in more depth about a vastly used protocol and software called SSH. I'm going to go over some of the things that I think are important and fun to know.
+
+SSH stands for Secure Shell and was born and created by Tatu Ylonen in Finland as a need to communicate more securily through the network in his university. Tatu faced issues with people sniffing on the communications to get passwords as remote communications were at the time wereTelnet, Rlogin, Rsh and similar others.
+
+Telnet served its purpose well and allowed users to login on remote machines, execute commands, run programs, copy files and such. However, the local networks started to become insecure since long was the time that only system administrators working in the universities' local network had access to. Thanks to the internet and LANs (Local Area Networks) connectivity to WANs (Wide Area Networks) the internet was born and everything then became part of this wider ecosystem of machines.
+
+Telnet made it easy to see what was being sent over the wire. SSH came to solve this problem by providing a way for communication to happen more securely in an insecure network environment that the internet is. This is what Tuto build for us back in 1995 at his university to solve his particular password sniffing problem and now it became the secure protocol over 2 millions of users are relying on to talk to computers everywhere across the internet.
+
+Today SSH has helped support the invention of many important communication protocols such as SFTP (Secure File Transfer Protocol) and SCP (Secure Copy), which are used for transfering files to remote machines.
+
+The reason SSH is so secure is because it uses a key pair mechanism to authenticate users. What this means is that there are two keys that are used for the connection to be succesfuly authenticate, by using a private and public key.
+
+The best way to explain how this works is by sharing one of the most popular analogies. Let's say you're friends with your neighbor and the only way to communicate with them is by sending a letter. One way to send them the letter is by simply putting it in their mailbox. This creates a problem though; anyone can go ahead and read the letter since it's unprotected. This is how Telnet works.
+
+Now imagine that instead, you go for a more secure approach.. You tell your neighbor you want to send a letter to them, they then send you a briefcase that you can put the letter in, you put your letter in it and lock using the key only you have access to, you then send it to them and they put another lock on it that they can open and they send it back to you, you then open your lock leaving only theirs and send it back, they receive it and are then able to open the last lock on the briefcase. This is basically what SSH does and its a technique called asymmetric cryptography.
+
+When Tatu Ylonen created this software he had no idea it would take off as fantastically as it did. Companies started contacting him for support and contracting, other universities were interested in using it and its usage continue to grow from there. Today SSH comes preinstalled in all Unix-based systems such as MacOS, Linux and even Windows 10 onwards. About 6 months later, Tatu then decided to create his own consulting company called SSH Communications Security and make it a
+proprietary software. This created an opportunity for those wanting a free version of the software, and since the earlier versions of SSH were freeware and open source, people forked it and created OSSH which then was also forked to create what is today known as OpenSSH that is what believe to be in fact most widely used since it's open source and free.
+
+Thanks to Tatu and his incentive to solve a personal problem and the ones he worked with directly, he forever changed the way computer communcate.
+ 
