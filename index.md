@@ -196,3 +196,61 @@ proprietary software. This created an opportunity for those wanting a free versi
 
 Thanks to Tatu and his incentive to solve a personal problem and the ones he worked with directly, he forever changed the way computer communcate.
  
+### 2021-01-11 04:08 The opportunity of intermittent test failures
+
+Having our softwares be tested automatically without the need of human manual verification is incredibly powerful and productive. This means we can go do something else as long as the tests in place have good coverage.
+
+The problem comes when those tests begin failing for strange reasons on strage times. This is usually referred to as intermitent failing or "flaky" tests. I've used this term more than I'm willing to admit, but it's a true pain for engineering and more common than I thought it was the first time I encountered it.
+
+There are various ways a test can begin failing:
+
+1. Performance
+2. User Interface interactions
+3. Race conditions
+4. Infrastructure
+5. Timebomb
+6. Random generated data
+
+If I were to quickly explain each in a few sentence, it would be:
+
+Performance: This is when the application logic has taken longer to fetch its data given the computer resource allocated to run the tests, therefore when a test run at a certain speed and expect the data to be there within a given time period, but the data has not yet finished loading, the test ends up failing.
+
+User Interface interactions: This is by far the one I face the most often. This is when interacting with a webpage doesn't reliabily resulting in the web component to behave as expected. Some common examples are when hovering on a the interface and expecting something else to show up so you can interact with it, say you hover or a menu bar and expect to click on a button within that bar but the button hasn't showed itself yet. Another example is a button that is visible and barely made it
+into the screen to be interacted with, and although it passes in a development machine it ends up failing depending on how the page was loaded, perhaps the button is no longer visible to be clicked because is now off screen or another component is on top of it and it's no longer visible and ready to interact with.
+
+Race conditions: This is sort of a combination of both performance and UI. Imagine the web page under test loads a list of items and that list is still being fetched from the serve while the browser is already attempting to interact with the list row.
+
+Infrastructure: Sometimes tests can fail randomly because of bugs with the programming language itself or tools being used to run the application such as a search mechanism.
+
+Timebomb: These are amongst the ones that are quicker to spot, but still no fun. Timebombs are the types of failures that only happen at a given date and time. For example, imagine a test has expects the age of a person to be 30, but as the new year rolls around, the test that had it hardcoded the age to be 30 is no longer true because time moved on and that person is now 31.
+
+Random generated data: This is in the same easier to spot category, because it's when data to automatically generate test data, say a user first name has an expecation on a particular name that happened to be selected most frequently, but then by pure unluck, the random generator engine has provided a different name now. This also happens with IDs where we expect records to be created in a certain order and assigned a unique identifier a certain way so that we can verify its ID on the UI,
+but then the test realizes that ID is no longer assigned to the expected record.
+
+BONUS: Another type of category of reaons why tests can fail intermitently are sorting issues. This happens when the test expects the results to come in a certain order, say a list with items, but that list has been provided sorted in a different way. This happens when sorting is not enforced and simply given the database the opportunity to sort at its own taste.
+
+There we have it, some of the most common types of flaky specs I encountered over the years. Hope I get to dive deeper into explaining each at some point in the future. Thanks!
+ 
+### 2021-01-11 20:33 Jest-ing
+
+Today I got a chance to explore some more of the Javascript testing universe, and since Jest has been the chosen testing framework of choice, I was happy to spend some hours of the day learning about it. So let's do this recall thingy shall we.
+
+Jest is yet another Javascript testing framework that was built by Facebook developers and later on open source to the React community and nowadays has gotten quite popular and it is as far as I can tell the most widely used in the React ecosystem, but also getting popularity in other Javascript frameworks such as VueJS and Angular.
+
+Jest's primary goals are to make testing easier and faster for developers, while still providing the most important tools in a single library. In addition to running Javascript tests, it also offers assertion APIs, mocking capabilities, code coverage reporting and an entirely new way to facilitate assertions called Snapshots.
+
+While running tests, it can also listen to filesystem changes in the codebase in a smart way using another tool that Facebook engineers have also created called Watchmen. This "watch" mechanism that is also available in Jest was created during a Hackathon project and has some cool functionalities as programmers instead of asking the computer to run the tests on every change, can instead make their changes in the files and expect Watchmen to notice changes across the codebase and
+automatically run those tests for them.
+
+The assertion part of Jest is pretty straightforward and is meant to replace ChaiJS, another assertion framework, though with the benefit that is also part of the package that people get with Jest.
+
+Snapshots is another cool functionality that record expectation objects for assertions while still ensuring the saved snapshots are updated and compared against the current execution result. I think I just confused myself so let's articulate an example: It's like take a photo of the Statue of Liberty last year, then going back again a year later with a better camera to take a new photo and replacing it with the old one. If that was still confusing, we can think of a situation where a
+button was in the page the first time the test ran, and Jest took a snapshot of that state of the HTML, then later on changing the color of that button. Jest will compare the previously saved snapshot and take another snapshot at today's execution and compare them. In this example, the button changed so the test would fail for a good reason. This way Jest let us aware that something has changed from its previous state and it's up to the programmer to check the failure and say "Ops, that
+wasn's intended" or "Looks good, these changes are expected. Let's refresh the snapshot so it keeps the most recent version of it". This is helpful because then programmers can go straight changing the implementation code without doing it TDD style, since Jest will take care of applying the change in the test assertion.
+
+Jest also attempts to provide a better and faster experience than Mocha, another widely used test framework. Though React's popularity definitely help Jest to be nowadays more downloaded in projects (last time peole checked it had about 4 million downloads per day as per NPM repository).
+
+Jest interacts really well with react-testing-framework as well as other react testing libraries that are used. Although I'm unable to recall, it apparently had an unsuccessful initial release that seems to have fell flat because of some issues including performance, but its later and more recent versions are fast and better.
+
+That's all for today. Baby stepping the heck out of it.
+ 
