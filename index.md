@@ -254,3 +254,34 @@ Jest interacts really well with react-testing-framework as well as other react t
 
 That's all for today. Baby stepping the heck out of it.
  
+### 2021-01-12 21:57 Quality Assurance
+
+The more software I write the more biased I become and strive to be less ignorant of what I lack on paying more attention to. This is why I believe places that implement Quality Assurance processes are making better decisions for the organization and specially their customers.
+
+QA for short, is the idea that software need to abide to abide to certain standards in order for it to satisfy and live up to the expectations of the users. Some may have the belief that automated tests is the ultimate goal to meeting that standard, but when it comes to testing software, the ways in which it can be tested is vast and hard to predict all possible paths without proper tooling. Engineers tend to code and test for the happy path and almost on a sort of ideological way
+where no matter how much they try, there is likely to be gaps and uncovered branches or paths in the codebase.
+
+This is when Quality Assurance professionals become a key component to the software development process and lifecycle.
+
+I once heard that there are two parts to Quality Assurance, one is Quality Prevention and the other is Quality Control. Whereas the former is responsible for ensuring that defects are avoided as much as possible and the latter is managing the current state of the software. That frame of mind states that what most of what we see oragnizations doing with their manual QA Analysts, it's the Control/management portion of it and less if any of the defect prevention. However, it's fair to
+say they both live under the Quality Assurance little pina colada umbrella.
+
+QA analysts spend countless hours going over product specifications, trying to come up with the best test cases they possibly can so that they can go over that checklist when it's go time. This can be immediately after development in a staging environment or when it's relesed and deployed to production, or both. This lifecycle is what seems to be still up for debate on which way is better. Some swear by QA before software gets to our users' hand so that we can deliver the best
+possible working piece of functionality to users, while others believe in failing fast and increasing cycle time (the time software takes from the initial coding phase to deployment). While both makes sense, there are cons and pros to both.
+
+QA Analysts in addition to coming up with a exhaustive list of test cases in theri spreadcheets, checklist or whatever application they prefer to use, they also have the responsibility to be the voice of the customer during product conversations. This is so because QA are undoubtaly the internal contributor that has spent the most amount of time using the application as much if not more than the users themselves as an individual. They know the paths like the back of their
+hands and feel the same level of pain as the users, and this is incredibly valuable during internal discussions.
+
+People wearing such hat can and should create metrics for understanding the health of the software. Number of bugs is an important metric, but it's far from being the only one that people should be aware. The percentage of automated tests in the codebase, its coverage, ratio of tests that regressed and many others are things to also consider.
+
+It's important to understand that although the standards, metrics and actual verification is done by those people, they are not one bit responsible for all the quality issues that can arise. QA Analysts have no control of the engineers their company hire or fire, the budget allocation to dedicate people to focus solely on quality, the amount of bugs that make into a team's backlog and so on... they do what they can with what they got, and blaming in an event that something goes off is not
+the way to go here.
+
+When it comes to testing itself, engineers tend to basically write two types of tests: unit tests and integration tests. Unit tests as the name suggests, is exercising the code paths at its most precise and compartmented level. Whereas integration tests is when you get all those individual bits, put them all together to interact with each other and check how they behave as a larger integrated system. There is a place for both to live, and QA loves both in addition to their manual testing
+that they know can be automated only to a certain degree.
+
+Exploratory Testing is the type of testing that unless someone comes up with some AI technology to do so, is what QA can also offer a great hand. Exploratory Testing is a unique type of verification because instead of the person going through a given checklist step by step, they actually use the software more naturally as a user would; without following any script and simply wondering around the application, going through the most unpredictable ways possible that no code as far as I'm aware
+is capable of doing without instructions.
+
+QA is important and the work they do is incredibly important to help increase the trust between ourselves and our customers.
+ 
