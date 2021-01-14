@@ -285,3 +285,38 @@ is capable of doing without instructions.
 
 QA is important and the work they do is incredibly important to help increase the trust between ourselves and our customers.
  
+### 2021-01-13 21:18 hi again, NPM
+
+NPM stands for Node Package Manager and for developers is probably the most well known and used package manager to date. At its most basic level, NPM is the place where Javascript modules and dependencies can be found. If we dive a little deeper on what it actually is, it's more than "just" a database for Javascript and its meta-information (fun fact, I like how meta-"data" and meta-"information" are two different things, data is a value without context whereas information is a data
+that has a meaning, so for example; "30" can be seen as a meta-data for a person, whereas "30 years" is information because it gave meaning to the numerical data.. I digress, back to NPM).
+
+NPM is a few extra things:
+1. CLI
+2. Registry
+3. Website
+4. Organization
+
+It's easy to see npm as just a Command Line Interface that download compressed projects from Github, but first of that is not entirely true, it's true that one facet of NPM is being this incredibly useful CLI as people know and use everyday. It has a main configuration file called "package.json" where the list of dependencies in other Javascript files is defined as well as meta-information about your project, and an also optional executable scripts that can be declared and ran from the
+terminal. Just as any CLI, NPM has evolved from almost a decade and it has a collection of options and features to assist the underlying application in managing all of what its necessary for it to run.
+
+The Registry part is the main aspect of it that made NPM stand out from its competitions, like Bower for example. To clarify, Registry is the database of modules and its meta-information lives and it's today extremely large and relied upon by probably 99% of the companies out there, definitely 100% of the Fortune 500 companies use it, so that's a great sign of success. The Registry has millions of Javascript packages for both NodeJS which was its main focus in the beginning to now frontend
+Javascript modules later on as it's where the competition with other frontend package manager tools began.
+
+It's fair to say today that NPM has "won" this Javascript package manager competition by miles since it dominated both ends of the stack, became the default choice for companies and has a bright future ahead given its large dataset and reliability.
+
+NPM's Registry is widely known for being this public database, though since more recent dates it is also used as a private repository as well for organizations that need some confidentiality.
+
+It's Website is the other piece of it that came earlier in the day and is useful until today as a way to scan through the Registry by using a web interface that surfaces all the millions of packages, its project information and a place where users can manage their packages.
+
+Lastly and very importantly for NPMs survival, it's that it also became an organization. If my mind serves me correctly, NPM started circa 2012 and around 2015 (or perhaps less) it has gotten so popular that its creator Isaac Schlueter had to make a decision on where to take this project. It wasn't an easy decision to make as the growth of the project was exponential and the data clearly showed that its enormous success is undeniable. Isaac needed money to keep the Registry alive and
+continue to maitain and evolve the software, he was able to survive by getting sponshorhip from the company he was working full-time at the time (yes, NPM was a side project) until it became unsustainable for them with all its costs. Isaac could've kept it as an Open Source Software while working for a big company like Google or Microsoft to have it under the company, Issact could've started a Foundation (which I'm personally unfamilar it at the moment), or better for him, started his
+own business and taken funding from Venture Capitalists. And that is how NPM became now also NPM Inc., the company responsible for in addition to its open source package manage version, a Software As A Service companyt that provides values not only to the open source coomunity and companies who are OK with the public aspect of NPM, but private companies who prefer to keep their own version of the Registry in their own servers or request consulting services from the speciallists or so on..
+Isaac is the Chief Product Officer and founter of NPM and has his fully remote team of about 60 people since the time of this writing.
+
+A few interesting fact of the CLI itself though is that just like any package manager dependant on other packages for it to work, it uses some pretty neat tools such as an abbreviation mechanism so you don't need to type the whole command because it figures out for you what you meant.
+
+There's an interesting aspect of NPM and it's architecture, it's built with the concept of SOA (Service Oriented Architecture) in mind (or microservices as people now like to call it and has a nice sounding touch to it). SOA is the idea that instead of having a single application or monolith, the application is built in multiple smaller chunks of independent applications that talk to each other. The benefits here are more than I can recall, but first, it goes witout saying that such
+architecture is what NPM is about, it encourages applications to be modular and deployable in various servers, that's why it has so many individual packages, that's a good thing to keep them separate so that code reusability can take place. NPM also needs to be a very reliable application, since the web pretty much depends on it, so it uses CDN for speed and caching.
+
+So, yes. NPM is all that and not just a command people type in the terminal.
+ 
