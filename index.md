@@ -320,3 +320,28 @@ architecture is what NPM is about, it encourages applications to be modular and 
 
 So, yes. NPM is all that and not just a command people type in the terminal.
  
+### 2021-01-14 21:35 Holly Infinity
+
+When dealing with numbers there are times when calculations produce unexpected results if people aren't as aware of the internals and how numbers work under the hood in computers and programming languages. I am (or think I was) one of those people and let's move away from that ignorance one word at a time, shall we?
+
+Infinity is a Numerical value in languages like Ruby that means what it claims to be, something that doesn't have an end and goes on forever. What it initially appeared to be just a sign of a "bad" calculation when putting two incompatible numbers together, it turned out to be a more interesting dive than I ever imagined.
+
+To explain why Infinity exists is important to understand that computers can only calculate so much and be as precise with describing numbers as it has bits for, and those bits have a limit. There was a time where computers were only able to process arithimetic with integers, well to a certain degree. Hardware was limited to integers, but the software could workaround it and workout the math to get decimals at that level, but it wasn't until computer hardware evolved enough that it
+eventually began being able to support Float points and calculate that in the hardware, making things a lot faster to process. The idea here is that the closer to the hardware the faster calculations are, so today that problem is solved. The issue we have now is that the type of Float we're talking about is compressed to as far as there s enough bits, so as an example... one would think that 0.1 + 0.2 in Ruby IRB for example, would result in 0.3, right? but it turns out that it'll result in
+0.30000000000000004, which with some level of ignorance, lack of curiosity and whatever-ness, looks good to me. What's happening here is that decimal numbers only go as far as it can go, but it stops at a certain point because it can go on forever.
+
+The reality is that unless we're sending rockets to Mars or something of that magnitude, we can get away with the level of precision it provides out of the box from these languages. In the grand scheme of things, calculating the distance between earth and alpha centauri in milimeters won't make that big of a difference if the last decimal digits are an approximation number, or if one is creating a video game where the precision is at a level far closer than a pixel. In reality, we
+wouldn't be able to tell the difference.
+
+Floating-Point is a specification created by IEEE (guess: Electrical Engineering org) so that there can be certain guidelines and recommendations on how say, programming languages should deal with numbers in a way that's easier to communicate across all these different systems.
+
+Ruby has Float::Infinity and -Float::Infinity, which both carry themselves telling everyone that can go far out up to the size of galaxies and beyind, to smaller than an atom size, it can just keep going.
+
+A few more quicker things learned:
+1. Floating points in binary are structure in three parts: sign + exponent + mantissa (this is basically the numbers that follow the decimal point)
+2. Some programming languages simplify by supporting Float by default and "only", while others prefer to have two data types, one for Float and another for larger floating pints such as BigDecimal or Double.
+3. When dividing a number with a 0.0 floating number, it results in Infitiy happens because 0.0 is not really 0.0, as we learned, it goes on and on with 0.000000..000000... until Infinity so we need to tell it when to stop or just say, "Yea, this goes forever, here's how we represent it as: Float::Infinity"
+4. Earlier ruby versions made it easier to deal with Infinity in a more idiomatic way where instead of saying (0..Infinity), programmers can now leave the Infinity out and see that as a way to represent the same idea.
+
+There's some math to be figured out here that I want to get to once I learn it, but today, this is the right place to start.
+ 
