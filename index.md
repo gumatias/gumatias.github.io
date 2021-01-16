@@ -345,3 +345,35 @@ A few more quicker things learned:
 
 There's some math to be figured out here that I want to get to once I learn it, but today, this is the right place to start.
  
+### 2021-01-15 21:19 Postgres Data Types
+
+What happens when a Ruby data of value Infinity tries to be saved in a numerical database column? well it won't work. Those are times when the opportunity to brush up on some very basic PostgresSQL skills calls for attention.
+
+Data Types in Postgres is a way to store a given data in a more meaninful and efficient way. There are about 20 data types in postgres from the most commonly used ones to the more recently created and even the ones the designers of the database will never know it existed because there's a way to leave the other data types up for the user to create is they choose to do so. For everything else, let me see what we can come up with:
+
+1. boolean
+2. bit
+3. character varying; varchar
+4. float
+5. text
+6. uuid: this universal unique identifier is so large that some say it'd be able to assign an id to every star in the universe. that's a lot of stars.
+7. json: plain text json.
+8. jsonb: some refer to json Better, but b stands for bynary. This means that the json instead of being stored as plain text like json would, it actualluy gets converter and stored as bytes and decompressed when reading the data.
+9. integer
+10. array: this is a new one I'm yet to learn more about. it's said to be helpful for more static data like tags (as in youtube video tags)
+11. date: just the date, no timezone
+12. datetime
+13. timestampz: date and time without timezone
+14. timestampz: date and time with timezone
+15. time: time of the day without timezone
+
+and a few others that still haven't solidified in my (or as) neurons yet. Each type has a strong reason to exist and some might still be around due to legacy reasons (like bit when it's recommended we use boolean for ths type of usage).
+
+Since I'm running short on time and I'm literally falling asleep on my keyboard every few seconds, here's something more:
+
+1. Postgres follow standards that other databases do (there's an RFC for it from IETF!)
+2. tik tak tik tak
+3. Postgres has some legacy data types that ti
+
+zzzZZzzzZZZZZZzz
+ 
