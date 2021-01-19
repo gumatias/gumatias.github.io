@@ -377,3 +377,79 @@ Since I'm running short on time and I'm literally falling asleep on my keyboard 
 
 zzzZZzzzZZZZZZzz
  
+### 2021-01-18 20:14 BDD and Python's Behave Testing Framework
+
+##### BDD
+
+Behavior Driven Development is what BDD stands for and it was created circa 2003 (I think) by Dan North (might be mispronoucing his name, but all I write here is from memory, so let's be forgiving), an Australian working for Thoughtworks at the time, who got involved in the Agile community where he initially got inspired by Kent Beck's Test Driven Development.
+
+Despite its name, Dan claims that BDD has nothing to do with testing and the reason he came up with it was mainly because he hoped to distinguish these two very related, although different ideas. Testing is when an individual or system verifies the results of the checks in place, and the Driven Development part of it is when tests are preceding the production code and dictating how it should be implemented. BDD on the other hand, in more or less Dan North's own words "To increase
+the level of confidence in the stakeholders through evidence". The way he expands on this statement was pretty impressive and if only I can recall them.. there's a talk on Youtube called "BDD is not testing" (or something along those lines) that is worth watching, but as far as I can rembmer, there's everyone's current favorite worth "empathy" when it comes to writing a test that is not for yourself, but those who depend on the software to function as expected not because you said so,
+but because there's evidence that we can show to our customers, product owners, fellow coworkers and even our future selves, and this really drove the point home. Writing a test thinking about others.
+
+Now how much test should one write? There was a controversial post by Kent Beck on StackOverflow that asked "how deep are your tests?", where he mentioned that he "gets paid for code that works, not for tests" and that he "write as little as possible to reach a given level of confidence" acknowledging that levels of confidence vary per individual. I personally always struggled with this and this is certainly something I'm keeping in mind moving forward.
+
+Back to BDD! It's all about increasing the level of confidence of the stakeholders through evidence (just making sure I still got this). This is what we're going to dive more deeply with a tool that I just got the pleasure to be introduced by an open source project I'm hoping to contribute; jrnl (the exact same one I'm using to write these posts).
+
+##### Python's Behave
+
+Behave is a BDD test framework written by yet another fellow Australian named Benno Rice (I'm getting good with names! who would've thought...). Benno's history with testing in Python wasn't a pleasant one, he looked into two other BDD-ish Python frameworks such as Lettuce and Freshened (I believe) and both had its own issues that didn't make him enjoy using it. That's when he along with a fellow programmer Richard Jones worked together on this cool framework that is today one of the
+most widely used BDD testing frameworks in the Python ecosystem (pytest-bdd as another popular pick).
+
+In one of his talks, Benno makes a compelling statement. Saying that the way we normally go about testing is we define our tests from the requirements, then define our application from the requirements. But what if instead we instead define our tests from the requirements and the application from the tests because the tests ARE the requirements.
+
+This was so insightful that I need to attempt to break this down or express in a different way:
+
+1) Requirements => Tests / Requirements => Application
+2) Requirements => Tests / Tests => Application
+
+#1 is what I personally do, but #2 which is what Benno Rice suggest, sounds much more appealing. When the tests themselves are the written requirements, then the fidelity is much higher because this can and perhaps should be the document that all stakeholders are looking at and communicating, it's shared and just by looking at that document writen in plain english, with a much more natural language and its easy to read Domain Specific Language, the level of confidence is much higher and
+the evidence is right there becuse all those steps are translated into actual code.
+
+This is what Benno Rice created along with Richard Jones, a Python BDD focused framework that's gotten the capability for DSLs to be written in its own file and an organized structure of files and folders where everything lives. Here's the organization from a user standpoint:
+
+1) All Behave's related files live under a features/ directory
+2) The tests cases themselves are listed under the same directory with a .feature file extension
+3) The feature files have a DSL to assist with framing the requirements in a standard manner: Feature, Scenario, Given, When, Then, And. Which I plan to expand more on soon.
+4) features/steps/ directory which is where the implementation for all the code that interacts with the software lives.
+
+Let's take an example for cooking a Vietnamese soup in a Microwave application:
+
+```
+Feature: Heating food in the Microwave
+
+Scenario: Heating a Vietnamese soup
+  Given a vietnamese soup
+  When I place the soup inside the Microwave
+  And I set the timer for 2 minutes
+  And I hit start
+  Then the Microwave starts heating the food
+  And after two minutes it stops
+  And the food is warm
+```
+
+This was probably more complicated than necessary, but hopefully it was clear enough to capture the key idea here.
+
+The next question was, but where is all the interaction with the application? Well, once the requirements are settled and clear (remember: QA, product owners and other stakeholders all agree and are looking at these same set of requirements), then it's time to go into the features/steps/ directory and create some Python code that links back to those requirements.
+
+First I need to confess that I never writen a single piece of Python code so the syntax is a brutally incorrect guess, but i'll be something like:
+
+```
+@given("a vietnamese soup")
+def step_given_soup
+  # ...
+
+@when("I place the soup inside the Microwave")
+  # ...
+
+@step("I set the timer for 2 minutes")
+  # ...
+
+@then("the Microwave starts heating the food")
+  # ...
+```
+
+That's in the most basic way possible, the idea. Natural languange like requirements with the aid from Behave's DSL is defined in the feature file and each step (Given, When, Then and And) are implemented as steps.
+
+Behave has a wide range of other features I didn't touch such as Fixtures and Hooks (which are in its essence, the same thing), support for arguments/variables so requirements can receive a variable set of value so we can reuse the same steps, contexts which is sort of like states that can be shared across steps and much more that makes testing with Behave quite a pleasure as far as I can tell.
+ 
