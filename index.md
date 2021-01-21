@@ -453,3 +453,99 @@ That's in the most basic way possible, the idea. Natural languange like requirem
 
 Behave has a wide range of other features I didn't touch such as Fixtures and Hooks (which are in its essence, the same thing), support for arguments/variables so requirements can receive a variable set of value so we can reuse the same steps, contexts which is sort of like states that can be shared across steps and much more that makes testing with Behave quite a pleasure as far as I can tell.
  
+### 2021-01-19 18:39 Numbers in Ruby
+
+I recently dealt with numbers in Ruby and it was a delightful way to get more familiar with its API and how it works from a higher level.
+
+Ruby treats all numbers as a Fixnum, and we can know that by grabbing the ancestors of any numerical value. e.g. `1.ancestors`, `1.1.ancestors` (pause to double check I actually got these right...).
+
+ACTUALLY, Fixnum is a deprecated class and it seems to have been replace by Numeric. Doing `Numeric.class.ancestors` and `Integer.superclass` or `Float.class.ancestors` we will see that in its list of ancestors, `Numeric` is present. When it comes to numbers, it is the highest level number related class in Ruby. Above that it's the `Object`, which we know that as an object-oriented programming languange, everything in Ruby is an object.
+
+Ruby also offers other ways to represent numbers that are more accurate and more suitable for other types of calculations. `BigDecimal`, `Complex` and `Rational` are some of those as far as I'm aware.
+
+`BigDecimal` is a more accurate and exact version of `Float` which is referring to floating points that as we know is inexact given it's bit allocation for representing decimal numbers.
+
+`Complex` is used for more scientific type of mathematical operations and `Rational` represent numbers in a way that I'll need to study more to not lie too much here.
+
+An interesting that Ruby does automatically when calculating numbers is something called coersion. Given a set of numbers, Ruby will convert the numbers before applying the arithimetic. So for instance:
+
+```
+result = 1 + 2 #=> 3;
+result.class #=> Integer
+
+result = 1.0 + 2 #=> 3.0
+result.class #=> Float
+
+result = BigDecimal(1) + 2 #=> 3.0
+result.class #=> BigDecimal
+```
+
+While the details are foreign to me today, Ruby makes sense of these number by coersing them to the largest Numeric type to avoid truncating the number and providing less exact results. This makes sense.
+
+Ruby also has a `coerce` method that does it similarly:
+
+```
+1.coerce(2.0) #=> [2.0, 1.0]
+```
+
+Ruby also has a few other methods inherited from Numeric that are helpful:
+
+```
+-1.abs #=> 1 Returns the absolute number without a sign
+1.to_f #=> 1.0 Coerces the number to Float
+1.1.floor #=> 1 Rounds the number to its lowest integer representation
+1.1.ceil #=> 2 Rounds the number to its highest integer representation
+1.3.round #=> 1 Rounds the number to its closes integer representation
+1.5.round #=> 2 Rounds the number to its closes integer representation
+#### ... and many more
+```
+
+Ruby is a language writen in C, though I _think_ those classes are written in Ruby but core parts of it are delegated to its C version that performs the nitty gritty of the arithimetic operations that who knows one day I get to dive in.
+ 
+### 2021-01-20 21:28 Rails' ActiveRecord STI and Polymorphic Associations
+
+Rails comes with two promising feature in its ActiveRecord database framework; Single Table Inheritance (STI) and Polymorphic Associations.
+
+STI in few and simple terms is a way to organize similar data in a single place. To be more specific, it means storing information that shares the same structure in a single database table, so that duplication can be avoided. Technically speaking, a STI table has essentially a `type` column where we can differenciate the various records that will be store. So an example that might work well depending on the requirements are in a farm application where we're storing the records of
+animals, where we have Chicken and Cow both being an Animal. We could have a table `animals` where inserting records for either Chicken and Cow plus other shared attributes such as `name`, `weight`, etc. can also be stored. Let's give this a shot (again, all from memory):
+
+```
+class Animal < ActiveRecord::Base
+  # ...
+end
+
+class Chicken < Animal
+  # ...
+end
+
+
+class Cow < Animal
+  # ...
+end
+```
+
+This looks fine as long as the requirements of the application matches for all types of animals. There are situations where STI may seem like a good idea at first, but down the road it could turn into an unfortunate decision if things go a different direction than initially expected (to say the least).
+
+As for Polymorphic Associations, it may seem similar since it also solves for avoiding duplicated table schemas and allowing similar types of data to live together in the same bucket, but just like STI, it's important to use it with care.
+
+
+With Polymorphic Associations, we instead of having a `type` column that holds the distict values, it instead holds an `id` which is a foreign key to a table that is considered to be of that polymorphic table's type. I think that was confusing, so here's a clarification and example... Using the same farm idea as above, let's say we also want to store a picture of the animals. So an image can have the url for the file itself, and perhaps some metadata like size, name, etc. Our `images`
+table would be referencing the animal's id in it so all animal's images can be stored in the same table. So unlike STI where it focuses on the type of each record, polymorphic associations focuses on a generic type of record that is applied or associated with the foreign table, and that is what gives it a type and meaning to it. Let me try again, STI focuses on a single place where many similar types are stored and Polymorphic Associations focuses on a single place where tables
+with similar attributes can point to or live. huh.. good enough, at least I tried.
+
+Pulling from the example above, we'd basically have an extra table and therefore model for the generic multi-purpose set of attributes:
+
+```
+class Image < ActiveRecord::Base
+  belongs_to :imageable
+end
+
+class Chicken
+  has_one image
+end
+```
+
+(In very simple terms again, huge caveat in everything I write on this website)
+
+There two data storage mechanisms are good tools to use when suitable, be careful (note to self).
+ 
