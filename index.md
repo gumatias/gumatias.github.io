@@ -549,3 +549,19 @@ end
 
 There two data storage mechanisms are good tools to use when suitable, be careful (note to self).
  
+### 2021-01-21 21:12 Application Performance
+
+When it comes to a website's performance there are a various ways to think about it. We need to keep in mind the size of assets such as images, stylesheets and javascript that are being serve to clients and if the website has a server with database running, how long that slice of the web request takes to respond, it all counts.
+
+Today there are online services available that does some of that benchmarking for us against different types of clients, devices, internet speeds and other important aspects that sometimes it's easy to forget, specially when living in a country where the internet speed and access is so abundant. We need to remember developing countries that are at the bottom of the technological advancement and are years behind the USA digital infrastructure. This matters specially when websites are
+serving internationally. It's important to be inclusive even in that regard.
+
+Lara Hogan, other than writing an incredible book about public speaking (Demistifying Public Speaking) that I was gifted, became a specialist in web performance and started consulting for companies and interviewing on podcasts to share her experiences. She says that performance is not a responbility of a single person of a certain role that is accountable for how the website performs, she says it's a responsbility all members have. Requests for website performance improvements or
+issues may come from Customer Support, any engineer in a team and not just the tech lead, the product manager and so on. It's all in our hands to make sure we're delivering a delightful experience to customers.
+
+But how fast is fast enough? Lara Hogan jokes that as long as we're faster than our competitors, than we should be good. Alghouth she shares that is often said that a 2 second load is what people believe is the limit that won't lose the attention of the user before they get frustrated and walk away thinking that things just doesn't work. Performance also matters depending on what the purpose of the page is, a search page may have a different set of expectations and relevancy to
+users if strategic parts of the page is loaded before others, say the results come first while the javascript, images and style for the rest of the page loads later.
+
+The closer we get to the metal the more complex things seems to get when we're taking a programming language execution time when running say, a loop, allocating objects into memory, performing expensive calculations or querying the database. Fortunately, Dave Beckperk (I am so sorry for mispronoucing it, I'll need to learn from memory) became specialized in Ruby performance, but also more generally application performance and a consultant with this very same focus. In one of his
+talks during a RailsConf, Dave shared a fun fact about the Apollo lunar landing that had an error pop up five times just seconds away from the lunar lander touching down and was saved by a 26 year old programmer present in Mission Control who became aware of the issue and said it was OK to proceed instead of aborting the mission. Uncertain from my memory how related that was to performance, although the 1Mhz, 32kb of RAM (give or take) computer was clearly a feat to say the least.
+ 
