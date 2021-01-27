@@ -584,3 +584,22 @@ a cost that at somepoint that pretty looking code might come back to bite us if 
 
 I'm hoping we can dive into the two application monitoring tools I mentioned earlier (New Relic and Scout) to see how they can help prevent major issues in production, so we'll leave that for next time.
  
+### 2021-01-26 21:56 Microservices (again)
+
+I have a strange feeling I've watched this movie before, or rather, written about it in some shape or form, though to a more superficial level perhaps. Well, today might be a replay or perhaps a better sequel of that movie. We'll need to wait to find out which one it'll be, until then, let's recap some basics of what we learned today.
+
+**TL,DR;** Microservices is when applications are organized in a loosely coupled manner, where each individual and smaller application is decentralized and isolated from each other while still able to communicate through public interfaces.
+
+Back in the day, perhaps decades ago when the world revolved around executables softwares that would be downloaded or even better, recorded into a CD-ROM, injected into a personal computer and then installed. During this period, where softwares would be fully deployed and executed in personal machines, there was a variety of issues that we programmers at the time had to deal with, the fact that software updates and fixes had to go through another process of reinstallation. This was
+OK and quite honestly is still what we do with operating systems and Kernels, although today is more segmented and less likely to happen that way. Applications back then, no matter how modular and organized they were, it'll always be deployed as a single instalation executable. This was more dificult to scale because the software would be highly limited to the user's computer. Today, thanks to the internet that is no longer the case for the majority of the softwares out there, with
+applications running online and in a separate computer or server, client computers are deferring the majority of the execution to another processing machine, this facilitated development and software updates since all software companies had to do was deploy to a single place. However, another type of issue arose, as a single computer was taking responsibility for all the load, it keeping up with the demand became an issue. We can only add so much memory and processing power to a single
+computer before we hit a wall, in other words, vertically scalling computers had its limits.
+
+If we think about a e-commerce application on the web during black friday, it's fair to imagine that its shopping card part of the application would be more heavily loaded than most of the rest of the website, say, the user profile service. This single running application is what we tend to call a Monolith. Mono stands for Single and Lith for Stone, originally in Greek. So basically the server is that single stone that everything runs together and goes to production as one. This ends up
+introducing various risks to a company since if unrelated broken parts of the application can take down the entire company's website. This is one of the problems that a Microservice architecture solves for, if we continue with our e-commerce example, the shopping card could be a separate smaller application separate from everything else, this way it can scale up and down relative to the amount of demand at any given time. This helps save cost because instead of scaling an entire giant
+monolith application because it's an all or nothing kind of deal, we're scaling a very specific service for a good reason.
+
+Netflix has its most popular Microservice talk on Youtube by one of its early engineers who watched the company grow through most of its lifetime up until recently. Netflix also started as a monolith and learnings through similar experiences with the entire platform going down given that it was too centralized from the application to the database was some of the reasons Microservices came for the rescue.
+
+Although Microservices has become the buzzword for web applications, it's good to remind ouselves that it is not the best or only solution, not is it better than Monolith applications, but instead a choice based on the company's needs.
+ 
