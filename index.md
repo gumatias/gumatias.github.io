@@ -603,3 +603,18 @@ Netflix has its most popular Microservice talk on Youtube by one of its early en
 
 Although Microservices has become the buzzword for web applications, it's good to remind ouselves that it is not the best or only solution, not is it better than Monolith applications, but instead a choice based on the company's needs.
  
+### 2021-01-27 22:31 More microservicing
+
+I know I told myself to avoid repeating the same topic in a row, otherwise I can get to an undesirable non-day-tight compartimented way to live, which I've been staying away from. Though I'm going to say perhaps 2 or at most 3 subsequent days of the same topic should be the limit. Now, onto the continuation of what actually matters most; Microservices.
+
+A bit of history on how Microsercices came about, is that James (ahh blanking on the last name now, starts with "W") who used to work at a large consulting company famously known as Thoughtworks had started to witness a certain pattern on how the companies he was working for were solving their problems when attempting to vertically scale. James began putting the pieces of the puzzle together from what he known before such as Bounded Context, a few other Domain-Driven Design patterns and
+more, that these very same companies began scaling through the creation of smaller self-contained, decentralized and loosely coupled applications. This allowed teams to instead of dealing as James call "a big ball of mud" that was rigid and resistance to change, have instead a organized and orchestrated set of smaller pieces taken apart from that same ball of mud monolith that in turn allowed teams to organize themselves more strategically around smaller chunks that had a single and well
+defined responsibility that could leverage continuous integration more strategically running only highly related pieces of test suites, faster deploys and less downtime since each application although connected still independent enough that breaking one deploy won't take down the entire business application.
+
+Dan North, the inventor of Behavior Driven Development also came up with a very similar pattern solving for the same set of problems that got another name, which is why James doesn't claim to be the inventor, but simply the contributor of a architectural solution that is standing on shoulders of giants.
+
+---
+
+Note to self: auditory learning is the worse way I can learn anything. The strategy that might work best is a multi-sensory learning experience where I can apply vision, tactory (right?! I mean, touching...), recall, self-assessment and a few other more effective ways that works best than auditory, rereading, highlithing, even mnemonics, imagery, summarizing and others I thought were actually beneficial but aren't. Anyways, this is not why I come here, but just wanted to add a separator between when I
+wasn't learning as effective as I could've with when I learned the right way to learn.
+ 
