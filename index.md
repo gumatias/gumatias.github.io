@@ -618,3 +618,43 @@ Dan North, the inventor of Behavior Driven Development also came up with a very 
 Note to self: auditory learning is the worse way I can learn anything. The strategy that might work best is a multi-sensory learning experience where I can apply vision, tactory (right?! I mean, touching...), recall, self-assessment and a few other more effective ways that works best than auditory, rereading, highlithing, even mnemonics, imagery, summarizing and others I thought were actually beneficial but aren't. Anyways, this is not why I come here, but just wanted to add a separator between when I
 wasn't learning as effective as I could've with when I learned the right way to learn.
  
+### 2021-01-28 20:32 Anki, Quizlet and Brainscape
+
+This is less of a technical writing and more of a review of tools that I'm planning to start using as a assistant for acquiring the knowledge I'm looking for to actually to the type of writing I'm dying for every single day :) so it's a meta writing in a sense.
+
+Also, because I'm building a habit of consistent writing at this initial stage as the main part of this beginning of the process and then focus on quality afterwards. One thing at a time, otherwise I'll end up making a mistake analagous to as when I tried to run faster and longer than usual. Enough of rambling..
+
+Learning through recall and self-assessment has been an attractive way for me to learn recently and as I attempted a few different ways to do so, one of which being writing this blog post amongst others more focused on visual and auditory aspects, I have to say that I'm still not getting a strong sense that I really master knowledges at the level I would like to. Which is why the interested on these two additional learning techniques. It still amazes me or perhaps I'm fortunate in a way,
+that I haven't been exposed or at least even tried a lot of what is at lease known in the United States as the most common learning techniques, one of which is the usage of Flash Cards. Yes, I am not sure how I made my way through college exactly, to be honest, I cheated a lot and am not ashamed to assume, specially because I acklodge oen of the biggest mistakes one can do to their personal and professional development.
+
+Either way, Flash Cards is here to stay (at least for me) and while one can simply ditch all the complexities and unnecessary tools available today through technology and stick with pen and paper, I found incredible value in the three ones that I spent some time researching today: Anki, Quizlet and Brainscape.
+
+Anki is apparently the one that has existed the loggest (since around 2006) and has been widely used by medical students specially. This by itself is a great testament to its efficacy, since becoming a doctor is no joke and requires incredible dedication. Though let's not stop there, a deeper dive into the software and we can begin identifying some advantages and some downsides.
+
+Anki's advantages are:
+1. It's been battle tested by a wide community for the longest period
+2. It's open source
+3. It has Add-ons which dramatically enhances its capability to expand
+4. It provides spaced repetition as its main methodology of learning
+5. It's mostly free
+6. It's gotten a very custimizable feature set
+
+Anki's downsides are:
+1. It's iOS app is the only thing that is paid ($25) while Android for instance, isn't (unsure why)
+2. The user experience and interface is the simplest and most basic
+3. Most content management features such as Add-ons are only available through its desktop version
+
+As for Quizlet's advantages, they are:
+1. It's user experience and interface is fresh looking and plesant to use
+2. Provides all key functionalities that its competitors does (e.g. a sort of spaces repetition functionality, image upload)
+3. It has a large collection of public content available for share
+4. It also has mobile apps
+
+Quizlet's downsides are:
+1. It's paid with monthly subscription
+2. It's a private company and I'm unaware of how long they've been on market for and whether they have a promising future or not. This is a personal downside based on my ignorance, nothing like a Google search wouldn't do it, but as I try really hard to write everything from memory, I'll leave this here.
+
+How about Branscape? It's OK, great UI and UX, but given that my clock just ringed, I won't bother because I didn't find anything exceptionally different than the two tools above.
+
+To wrap things up, I've opted to signed up for a 7-day trial with Quizlet as it seemed the most attractive to me today, so I'm hoping that I will actually start using it on a daily basis to enhance my learning and hopefully we'll get to write some ACTUAL software engineering nerdy stuff I really want to. Fingers crossed.
+ 
