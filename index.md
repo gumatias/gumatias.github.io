@@ -658,3 +658,31 @@ How about Branscape? It's OK, great UI and UX, but given that my clock just ring
 
 To wrap things up, I've opted to signed up for a 7-day trial with Quizlet as it seemed the most attractive to me today, so I'm hoping that I will actually start using it on a daily basis to enhance my learning and hopefully we'll get to write some ACTUAL software engineering nerdy stuff I really want to. Fingers crossed.
  
+### 2021-01-29 20:00 A RFC is not a RFC
+
+Yes, yet again we're chatting about RFCs. Spaced repetition anyone?
+
+The IETF (Internet Engineering Task Force) has enabled for the development of more guidelines and specifications than I can imagine. From network protocols such as the TCP/IP, so SHH, audio and video streaming and beyond. What was once a smaller group meeting back in the 60's where less than 100 people would gather in Massachussets, it is now the open organization where internet related subjects are documented, discussed and analyzed. Where would we be without that group of people who
+went through so many legislative, liability and political matters to be at the position we see them today.
+
+One of IETF's main job is keep working groups and documentation in check. This is important because Working Groups as they call it, is the mechanism for developing specifications and guidelines, in which standards and recommendations are defined. This without a doubt comprises of people and technology to support this mission. The way those standards and recommendations are documented is through RFCs. In IETF's point of view, RFC is no longer a definition for Request for Comments, it
+used to be that way, until they realized that once a RFC gets published, then it's already too late for revisions of the same document to happen. It'll then be another RFC. So to them, RFC is simply an RFC, period.
+
+Let's imagine you have an idea that promises to revolutionize the internet, so you decide to contact one of IETF's working group and they'll tell you to:
+1. Do some sanity checking. Share your idea to others, specially those who might have different opinions and listen to them. What might sound like a great idea to one person might not sound that great to another.
+2. One you feel good about the theoretical part of it, then you can start Drafting your RFC document in good old plain text. No Microsoft Word or anything of that sort, IETF's like to keep it as simple and as text editor agnostic as possible. They've been supporting XML for multiple decades for instnace.
+3. Now that you got your draft, it's time to begin sharing it, receiving feedback and going through multiple revisions as people help you hone your idea a bit more
+4. Once you feel good about the current revision of the document, now you can have a meeting with the Working Group to discuss it further with interested volunteer members
+5. If the plan continues to go well, you're then welcome to publish it for full visibility across the internet
+6. That's about it!
+
+Now let's drill down in a few specific concepts about the document itself. First is that there are multiple RFC Tracks in which a given document can/will go through:
+1. Informational RFC track
+2. Experimental RFC track
+3. Standard RFC track
+4. Historical RFC track
+
+As we can see, the RFC can be just a FYI as covering the ground for documenting something that wasn't before, who knows. The other are things one is trying it out and using the experimental track to document, receive some feedback and leave it out there. Then we have the actual standard track that is widely known and used, and finally we have a track where we're looking back in time and writing it all down.
+
+As we can see, the RFC at IETF is a very complex process to go through and requires good understanding of the entire process before attempting to write something RFC-worthy, which in itself is a very intriguing topic. But today we're stopping here :)
+ 
