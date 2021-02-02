@@ -144,7 +144,7 @@ Years ago I couldn't imagine I would be able to work from such a simple and mini
 
 It's been indeed pleasant to get to my little office and see such a simple area to get started with the day, it excites and motives me. For my own records, here's how it looks:
 
-![](https://p-bofzyj.t3.n0.cdn.getcloudapp.com/items/llunbdlE/b013ae61-6673-4f8e-910f-135d565b72ba.jpeg?source=viewer&v=5fad2378d53942ebaaa3e79c82d48457)
+![](https://p-bofzyj.t3.n0.cdn.getcloudapp.com/items/wbu9JQql/6982aed9-c6a5-4324-be38-f5581f503f3f.jpeg?source=viewer&v=58418138a8be42b57e50535e70aee5a1)
 
 It truly has all I need
 It's gotten a frame with my company values that I strive to live by each day when interacting with my coworkers and challenging daily tasks, a tabled (more on that below), airpods and a water bottle.
