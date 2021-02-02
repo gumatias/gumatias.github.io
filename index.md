@@ -686,3 +686,20 @@ As we can see, the RFC can be just a FYI as covering the ground for documenting 
 
 As we can see, the RFC at IETF is a very complex process to go through and requires good understanding of the entire process before attempting to write something RFC-worthy, which in itself is a very intriguing topic. But today we're stopping here :)
  
+## February
+
+### 2021-02-01 19:13 Continuous Delivery, Deployment and Integration
+
+I know, I know... the title might seem like I'll cover a lot of ground, but although it's seen as three different subjects they all have a lot in common as we'll see. Today it was a great refresher, though I'd be lying if I say that I never really stopped to understand these concepts well enough. So let's quit the roundabout.
+
+Continuous Delivery is a software delivery approach where merged code makes to production ideally on a daily basis. The key aspect of this approach is that although code is deployed quickly, it still has a need for a manual business intervention so it can get into the hands of the users. One of the main benefits of Continuous Delivery is the speed of which product owners learn from user feedback. This is due to the idea that by getting the software into users' hands as quickly as
+possible, we will be comforming to the Agile methodology by iterating fast, learning and re-iterating to build and deliver better software next time around. It is more business and product oriented than the code itself although it is an umbrella in which Condinuous Deployment and Integration live.
+
+Continuous Deployment on the other hand contrasts to Delivery where is automatically deployed into production as rapidly as possible without manual intervention, it is in production whether the user can see it or not, it's specifically code oriented regardless of whether it's ready to be seen and fully used by customers or not. As we can imagine, this brings a lot of benefits when code goes into a production environment very quickly; it is less susceptible to major outages, specially
+those who are harder to debug. This is because smaller pieces of code is being deployed at a much faster rate, therefore the feedback loop is much shorter and the chances of one or many significant changes from breaking production is diminished. However, in the event that it does break something, the nature of continuous deployment will make it relativelty easier to identify problems due to less changes to go through.
+
+Lastly, but not least and very importantly is Continuous Integration. This is the closest to the stack that we can get amongst these three and possibly the most important for the success of Continuous Deployment and Delivery. Continue Integration means code getting merged into the main trunk of development in a repository quickly, being built as soon as the merge happens and specially tested automatically to ensure that the code not only compiles but that everything is augorithmatically
+correct when the software is run. A solid suite of automated testing is very important when it comes to CI, as it will help identifying bugs as quickly as possible on merges, so "merge hell" or "monster merge" can be avoided.
+
+That's all I got for today :)
+ 
