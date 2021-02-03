@@ -703,3 +703,27 @@ correct when the software is run. A solid suite of automated testing is very imp
 
 That's all I got for today :)
  
+### 2021-02-02 20:51 Circuit Breaker Pattern
+
+Thought I was stuck with RFC and Microservices for good, but I guess not! (sort of). There's always opportunity to learn something new and different. Lately I've been realizing how lucky ignorant people are (like myself), because if one starts knowing (or thinking you know) everything around themselves then life can seem boring. On the other hand, those who know very little are in for a big treat and I say for myself that there's no better place to be and discover all the things there
+is to discover, learn, get curious about and teach! so let's get going and stop wasting time rambling as I like to do to procrastinate slightly...
+
+Circuit Breaker is a software design pattern that aims to make software more resillient and fault tolerant. Resillient because it adapts to changes in a system very rapidly and dinamically. Fault tolerant by finding ways to continue providing good user experience and prevent the business from losing revenue by learning how to deal with application errors and timeouts.
+
+This pattern is well known outside of the software industry and it's ubiquitous. In electrical engineering, that is how disasters in an eletrical system is prevented; if the electricity current that is flowing through one's house starts to fail, the best thing to do is cut the current flow so it doesn't run riot and affects everything else connected to that same curcuit, it breaks the circuit by opening it so that the flow stops running through. This is different than a fuse for
+example, where it needs to be replaced in an event of a circuit failure, circuit breaks survives.
+
+Back to software engineering, this design patter has been implemented by various people and companies, most notably Hyrics (or something like that) open sourced by Netflix, Resillient4J another by the Java community and Retry (I believe), as well as pages of NodeJS libraries available in the NPM registry.
+
+This pattern is widely used and became very popular in Microservices because transfering data through networks is likely to have a variety of issues such as unexpected errors and timeouts.
+
+Circuit Breakers have basically three states: Open, Closed and Half Open. Open is when the flow is disconnected and cautiously looking for an opportunity to retry and survey the situation, Closed is when everything is functioning as normal and it's business as usual, Half Open (disclaimer, unsure will check afterwards, read at your own risk) is when the Circuit Breaker is testing the waters and after it being fully open, is verifying the status of the service it once used to call and
+analyzing how it's been going so it can make a decision by either staying open or getting back to closed.
+
+Before we move on, it's important to quickly touch on the differences being a Resillient and a Fault Tolerant service. Resillient is the how much, whereas Fault Tolerant is the what, what types of failures can it tolerate and continue to move on? So the former can be capped, since being dynamically adaptable to change is based on much failures it can handle, at some point it might start tripping and can even collapsed. Which is why tolerating faults in an intelligent way by learning
+about what types of failures it can toleate is beneficial, and how it will perform that.
+
+The pattern has certain capabilities worth exploring that it can be own topic including; Timeouts, Errors, Fallbacks, Tripping and probably more.
+
+That's it! super quick overview to start :)
+ 
