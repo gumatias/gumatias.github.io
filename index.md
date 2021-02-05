@@ -750,3 +750,28 @@ I have a few things in mind to try it out, so I think it's also important to kee
 
 I have so much more to write about it, but I just let my fingers continue typing non-stop and my mind to go all over the place as I'll be able to tell whenever I get to read everything I just wrote. Now let's get to work!
  
+### 2021-02-04 19:03 Property-based testing
+
+This type of testing is a style focused on properties rather than specific examples. Property-based testing runs through a randomly specified wider range of values in a given test. The way it compares to a example-based test is that, usually one would focus on a single scenario to be tested, normally a set of happy paths. The problem with that is it leaves out an large depth of untested scenarios that are susceptible (sorry, I just learn this new word and I gotta keep finding ways to
+insert into my writing to get used to it) to bugs. When example-based testing asserts that 2 + 2 equals 4, Property-based testing tests that a + b = c. Meaning, it center it's efforts on the property itself rather than the value.
+
+The benefits of this style of testing are:
+1. Can find an unthinkable variety of bugs
+2. It reduces lines of test code
+3. It results in a more resillient and robust software
+
+As most things in engineering, there are trade-offs. Adopting a Property-based testing style is no different:
+1. Can fail at unexpected times depending on the range of variabe inputs
+2. Can have a performant hit as more tests will be executed
+3. People who have experience with it claimed it to be harder to implement and setup
+
+This style of testing came to life from a Haskell testing library called QuickCheck. Its name came from the realization that although widely more robuts than example-based testing with specific scenarios, it still is humble enough to claim that it cannot check everything because it knows that software cannot really be 100% tested with all scenarios. It will simply do a quick check on what it can, though just enough to make programmers more comfortable with it.
+
+After the immense success with QuickCheck, other languages started to adopt it and today Hypothesis from Python is another big hit, as well as a few other from different languages.
+
+The creator of Hypothesis in one of his talks shares the idea that we can survive as a business without fully testing our code to a maximum. As long as we know the areas that it should be well exercised, then that'd be good enough for an application to be healthy.
+
+A few of the great things about the libraries for property-based testing is that they are customizable enough that one can setup the range of data to test against, and what's allowed and disallowed.
+
+Perhaps once I get my hands dirty with it on some language I can give some code samples a shot :)
+ 
