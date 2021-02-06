@@ -775,3 +775,14 @@ A few of the great things about the libraries for property-based testing is that
 
 Perhaps once I get my hands dirty with it on some language I can give some code samples a shot :)
  
+### 2021-02-05 19:05 Test parallelization
+
+Knapsack Pro is a Ruby gem that ensure tests are run in parallel, therefore speeding up the overall execution time of a given suite of tests in a Continuous Integration environment. The way it works is that it's API will contain a queue of file names where it will manage when and where to execute a set of files in the number of parallel nodes that a CI environment provides.
+
+Knapsack Pro aims to more inteligently run tests by figuring out which node is the best candidate to run a set of test files. One way to think about it is that if we have two computer resources available and we tell both to run a set of tests, it's unlikely that they'll finish in the exact same time, one will probably be faster at some level. KnapSack Pro will become aware of that, and once that computer is done, it will ask the API for more tests to run, until it's all done. This approach
+allows for a more meaningful parallelization, continiuously looking for the next available computer that can run more tests, so that in the end, they can finish faster. In a more practical example, this software was able to cut down on time from a 30min long running CI build to only 3 minutes.
+
+This gem integrates with basically the most popular CI services out there and test runners such as Minitest, Rspec, Cucumber, Jest and probably more support is coming. It started as an open source project and now Arthur, it's creator, has turned it into a business that is helping a wide number of organizations run their tests faster and saving people's time.
+
+Thank you Arthur.
+ 
