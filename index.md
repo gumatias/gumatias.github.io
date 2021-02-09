@@ -786,3 +786,37 @@ This gem integrates with basically the most popular CI services out there and te
 
 Thank you Arthur.
  
+### 2021-02-08 20:59 Rails performance knowledge dump of the day
+
+When it comes to thinking about performance in web applications, more specifically in Rails. A few things that may pass through a Ruby on Rails' mind are:
+
+1. Caching
+2. Indexing
+3. N+1 queries
+4. Content Delivery Network
+
+And probably a lot more, but for today's purpose. That's what we (re)learned :)
+
+##### Caching
+In general, caching is when a software saves data in a storage system so that it can be retrieved faster in future queries.
+
+Rails goes a step beyond it's more vague definition by implementing through a mechanism that has been known as the russian doll caching system. This form of caching in Rails applications is when an inner fragment of data remains cached even if its top-most fragment is no longer cached. It allows for certain levels of the data set to remain in a warm state while the outer-most is cold and needs to be refreshed. This prompts the question, but what do we mean by warm or cold cache? In simple words, cold caches are caches that are empty and once it has had data stored in it, then it's said to be warm.
+
+##### Indexing
+Indexing is our next and widely used form of optimizing database queries. Indexing is when data is being stored in a sorted manner in a database so that it can be fetched faster than had the data been not previously indexed. An analogy I had the pleasure to have been humored today is that of a book, where say if your cat is sick and you have a book of medical remedies to give your cat, then a non-indexed way to go about looking for your cats illness is by starting on page one and going
+page by page looking for the illness your cat has until you find the treatment. Now imagine in another scenario, where you open that book and right at the first page you see a catalog of all the pages marked by the first letter of the illness. This will allow you to just by looking at that catalog, know which page you should jump into more quickly without having to flip through page by page. This means that the pages have been indexed and it's what you get right in the first pages for
+convenience.
+
+One common rule of thumb for improving query performance is by indexing columns found in database queries. While this certainly helps, it's worth pointing out that the indexing process itself has a cost during inserts, updates and deletes.
+
+##### N+1 queries
+
+A common gotcha that people fall into when using Active Record is N+1 queries. This means that the first query is being executed repeated times for another record. It is usually recommended to use joins in queries by utilizing includes in Rails queries, though if using an approach such as russian doll caching, N+1 might actually be a feature (as per DHH's comment in a web conference). His argument is that russian doll caching works best with simple queries, and N+1 queries are normally
+much simpler than a non-N+1 query that looks more compex and has joins in it.
+
+##### Content Delivery Network
+
+CDN is a way to deliver web content to users in a much faster way due to its location-based delivery strategy. This means that if a given website has CSS, Javascirpt and Images. Those will be cached in the closest computer network to the user so that the latency is decreased as much as possible. Conversely, people would rather not load those tyeps of assets from the furthest machine, so CDN offers a solution for that type of information going through the network.
+
+When considering performance, databse, frontend assets, caching and much more are just a few of the things that need to be discussed if coming up with a more well understood problem and solution, this was just a tiny portion of them.
+ 
