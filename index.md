@@ -820,3 +820,32 @@ CDN is a way to deliver web content to users in a much faster way due to its loc
 
 When considering performance, databse, frontend assets, caching and much more are just a few of the things that need to be discussed if coming up with a more well understood problem and solution, this was just a tiny portion of them.
  
+### 2021-02-09 19:26 Webpack
+
+Webpack is a javascript module bundler. To put it simply. It takes numerous javascript libraries and modules, then put them all together in fewer, usually a single output file that is used as the entry point for a web application.
+
+The problem it solves is one that is exposed without using it while attempting to create a web application that has dependncies in external libraries or even internal javascript files living in the same project. Pre-module bundlers such as Webpack, one would need to very deliberately declare the javascript html script tags in the html file as such:
+
+```
+<html>
+  <head>
+    </script src="file_a.js">
+    </script src="file_b.js">
+    </script src="file_c.js">
+  </head>
+  <body>
+    <!-- ... -->
+  </body>
+</html>
+```
+
+While this approach has worked for years, it exposes inumerous complexities when managing those dependencies and dependencies of those dependencies and so on all the way deep into that tree. Webpack takes care of that dependency tree for us during its build process.
+
+Webpack became a powerful tool for not only creating a built bundled javascript file, but also for things such as:
+1. Also bundling CSS
+2. Executing transformers for executing things like Babel that serves as a way to translate or in other words polyfill latest-released EcmaScript versions into what current browsers can understand
+3. Lazy loading dependencies only when modules are required and used (there's a specific technical name for that which I'm blanking out)
+4. Transform SASS and LESS stylesheet files into regular CSS, as well as JXS (React) into plain old Javascript
+
+These are just a few examples of how capable it can be as it gets used in projects.
+ 
